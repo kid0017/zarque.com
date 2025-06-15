@@ -1,2 +1,84 @@
-# zarque.com
-Official website of ZARQUÉ — a premium fashion jewelry brand.
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZARQUÉ | Elevated by Noir</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'OnyxBT';
+      src: url('https://fonts.cdnfonts.com/s/12069/Onyx.woff') format('woff');
+    }:root {
+  --navy: #0B0F1A;
+  --gold: #FFD700;
+}
+
+body {
+  background-color: var(--navy);
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.brand-font {
+  font-family: 'OnyxBT', serif;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.parallax {
+  background: url('https://images.unsplash.com/photo-1606851091954-6cd9115fcbe2') center/cover no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="w-full flex items-center justify-between px-6 py-4 fixed top-0 z-50 bg-opacity-30 backdrop-blur border-b border-gray-800">
+    <div class="text-white brand-font text-3xl tracking-widest">ZARQUÉ</div>
+    <div class="text-white text-lg">☰</div>
+  </nav>  <!-- HERO SECTION -->  <section class="parallax flex items-center justify-center">
+    <div class="text-center mt-32 fade-in">
+      <h1 class="text-6xl md:text-8xl brand-font tracking-widest">ZARQUÉ</h1>
+      <p class="text-lg gold-text mt-2">Powered by the Noir's</p>
+      <p class="text-xl italic mt-4 text-gray-300 max-w-2xl mx-auto">For those who lead fashion — not follow it.</p>
+    </div>
+  </section>  <!-- COMING SOON -->  <section class="py-24 text-center">
+    <h2 class="text-4xl md:text-5xl gold-text tracking-wide fade-in">COMING SOON</h2>
+    <p class="text-lg text-gray-400 mt-4 max-w-xl mx-auto">Our collections are not just accessories — they're declarations of identity.</p>
+  </section>  <!-- COLLECTIONS -->  <section class="px-8 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <div class="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-xl hover:scale-105 transition-transform fade-in">
+      <h3 class="text-2xl gold-text">The Halo Coil</h3>
+      <p class="text-gray-300 mt-2">Elegance wrapped in attitude.</p>
+    </div>
+    <div class="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-xl hover:scale-105 transition-transform fade-in">
+      <h3 class="text-2xl gold-text">Vein Script</h3>
+      <p class="text-gray-300 mt-2">Where royalty meets rebellion.</p>
+    </div>
+    <div class="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-xl hover:scale-105 transition-transform fade-in">
+      <h3 class="text-2xl gold-text">Temple Tears</h3>
+      <p class="text-gray-300 mt-2">A droplet of divinity.</p>
+    </div>
+    <div class="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-xl hover:scale-105 transition-transform fade-in">
+      <h3 class="text-2xl gold-text">Casket Lock</h3>
+      <p class="text-gray-300 mt-2">Darkness. Sealed in style.</p>
+    </div>
+  </section>  <!-- FOOTER -->  <footer class="text-center py-10 text-gray-500 text-sm">
+    © 2025 ZARQUÉ — All Rights Reserved.
+  </footer>
+</body>
+</html>
