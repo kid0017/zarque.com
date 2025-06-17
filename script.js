@@ -1,13 +1,10 @@
 
-function toggleSystemBar() {
-  const bar = document.getElementById("systemBar");
-  bar.style.display = bar.style.display === "flex" ? "none" : "flex";
+function toggleMenu() {
+  const menu = document.getElementById('glitchMenu');
+  menu.classList.toggle('show');
 }
 
-function glitchTransition(e) {
-  e.preventDefault();
-  document.body.classList.add("glitch-out");
-  setTimeout(() => {
-    window.location.href = e.target.href;
-  }, 400);
+function navigateTo(link) {
+  document.body.classList.add('glitch-transition');
+  setTimeout(() => { window.location.href = link; }, 500);
 }
