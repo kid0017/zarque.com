@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZARQUÉ | Urban Movement</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZARQUÉ | FUTURE DROP</title>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
-    <source src="background.mp4" type="video/mp4">
+    <source src="background.mp4" type="video/mp4" />
   </video>
 
   <audio autoplay loop>
@@ -18,31 +19,31 @@
   </audio>
 
   <div class="system-icon" onclick="toggleSystemBar()">☰</div>
-  <div class="system-bar" id="systemBar">
-    <a href="index.html">Home</a>
-    <a href="collection.html">Collection</a>
-    <a href="about.html">About</a>
+  <div class="system-bar glitch-in" id="systemBar">
+    <a href="index.html" onclick="glitchTransition(event)">Home</a>
+    <a href="collection.html" onclick="glitchTransition(event)">Collection</a>
+    <a href="about.html" onclick="glitchTransition(event)">About</a>
     <a href="#campaign">Campaign</a>
     <a href="https://www.instagram.com/zarqueofficial" target="_blank">Instagram</a>
   </div>
 
-  <div class="hero">
-    <h1>ZARQUÉ</h1>
-    <p class="tagline">BUILT FOR THE BOLD. HEARD ON THE STREETS.</p>
-  </div>
+  <header class="hero">
+    <h1 class="glitch-text">ZARQUÉ</h1>
+    <p class="tagline">FUTURISTIC URBAN DRIP</p>
+  </header>
 
   <section id="campaign" class="section">
-    <h2>Campaign</h2>
+    <h2 class="glow">CAMPAIGN</h2>
     <div class="gallery">
-      <img src="model1.jpg" alt="Model 1">
-      <img src="model2.jpg" alt="Model 2">
-      <img src="model3.jpg" alt="Model 3">
+      <img src="model1.jpg" alt="Model 1" />
+      <img src="model2.jpg" alt="Model 2" />
+      <img src="model3.jpg" alt="Model 3" />
     </div>
   </section>
 
   <footer>
-    <p>Powered by The North</p>
-    <p>&copy; 2025 ZARQUÉ. Designed in the streets.</p>
+    <p>Powered by The North. The Noir’s.</p>
+    <p>&copy; 2025 ZARQUÉ. In collab with Collab Music Co.</p>
   </footer>
 </body>
 </html>
