@@ -24,14 +24,17 @@
     <h1>ZARQUÉ</h1>
     <p>COMING SOON</p>
 
-    <div class="inline-login">
-      <h3>Login to your account</h3>
-      <form>
-        <input type="email" placeholder="Email address" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
+    <div class="order-form">
+      <h3>Place an Order</h3>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <textarea name="address" placeholder="Shipping Address" required></textarea>
+        <input type="text" name="product" placeholder="Product Name" required />
+        <input type="number" name="quantity" placeholder="Quantity" required min="1" />
+        <button type="submit">Submit Order</button>
       </form>
-      <p class="signup-text">Don’t have an account? <a href="#">Create one</a></p>
     </div>
   </div>
 
